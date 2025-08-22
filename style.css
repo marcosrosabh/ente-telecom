@@ -1,0 +1,188 @@
+/* style.css */
+
+/* Importação de Fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Variáveis de Cor e Estilos Globais */
+:root {
+  --primary-color: #008e67;
+  --secondary-color: #007a5a;
+  --dark-grey: #333;
+  --light-grey: #f8f9fa;
+  --white: #ffffff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Header e Navegação */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+.navbar-nav .nav-link {
+  color: var(--white) !important;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Botões */
+.btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn-success {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(0, 142, 103, 0.4);
+}
+.btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 142, 103, 0.6);
+}
+
+/* Seções */
+section {
+  padding: 80px 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card .card-body i {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Seção Áreas de Atuação (index.html) */
+#areas .area-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+#areas .area-item img {
+  transition: transform 0.4s ease;
+}
+#areas .area-item:hover img {
+  transform: scale(1.1);
+}
+#areas .area-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+#areas .area-item:hover .area-overlay {
+  opacity: 1;
+}
+
+/* Accordion (FAQ) */
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+.accordion-item {
+    border-radius: 15px;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+/* Vídeo */
+#video .ratio {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.video-custom-ratio::before {
+  padding-top: 36.4583%; /* Proporção exata de 560/1536 */
+}
+
+/* Seção Carrossel de Clientes */
+.cliente-logo {
+  max-height: 70px; /* Define uma altura máxima para padronização */
+  width: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza a imagem no seu container */
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.cliente-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#clientes .carousel-control-prev,
+#clientes .carousel-control-next {
+    width: 5%;
+}
+
+#clientes .carousel-control-prev-icon,
+#clientes .carousel-control-next-icon {
+    /* Deixa os ícones de seta mais escuros para melhor visibilidade em fundo claro */
+    filter: invert(1) grayscale(100) brightness(0.5);
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+}

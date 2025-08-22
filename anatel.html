@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entel Telecom | Licenciamento Anatel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="shadow-sm" style="background-color: #008e67;">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/logo_entel.png" alt="Logo Entel Telecom" class="me-2" style="border-radius: 50%; width: 60px; height: 60px;" />
+          <h4 class="mb-0">Entel Telecom</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="index.html#sobre" class="nav-link">Sobre Nós</a></li>
+            <li class="nav-item"><a href="anatel.html" class="nav-link">Anatel</a></li>
+            <li class="nav-item"><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="index.html#areas" class="nav-link">Áreas</a></li>
+            <li class="nav-item"><a href="index.html#contato" class="nav-link">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home-anatel" class="py-5 bg-light text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Operação Legal e Segura</h1>
+        <p class="lead">Garanta a conformidade total com a Anatel e evite penalidades severas.</p>
+        <img src="assets/licenciamento_anatel.png" alt="Licenciamento Anatel" class="img-fluid rounded-circle shadow my-4" style="max-width: 180px;"/>
+        <p>A Entel Telecom oferece consultoria completa para manter suas operações de telecomunicações regularizadas.</p>
+        <button class="btn btn-lg btn-success" onclick="openWhatsAppAnatel()">
+            <i class="fab fa-whatsapp"></i> Quero Regularizar Agora
+        </button>
+    </div>
+  </section>
+
+  <section id="porque-licenciar" class="py-5">
+      <div class="container">
+          <h2 class="section-title">Por que se preocupar com o Licenciamento?</h2>
+          <div class="row text-center">
+              <div class="col-md-3 mb-4">
+                  <div class="card h-100">
+                      <div class="card-body">
+                          <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+                          <h5 class="card-title">Multas Milionárias</h5>
+                          <p class="card-text">As multas por infração podem chegar a R$50 milhões.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                  <div class="card h-100">
+                      <div class="card-body">
+                          <i class="fas fa-gavel fa-3x mb-3"></i>
+                          <h5 class="card-title">Sanções Penais</h5>
+                          <p class="card-text">Responsabilização administrativa e penal de gestores.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                  <div class="card h-100">
+                      <div class="card-body">
+                           <i class="fas fa-ban fa-3x mb-3"></i>
+                          <h5 class="card-title">Apreensão e Suspensão</h5>
+                          <p class="card-text">Apreensão de equipamentos e suspensão imediata dos serviços.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                  <div class="card h-100">
+                      <div class="card-body">
+                          <i class="fas fa-file-invoice-dollar fa-3x mb-3"></i>
+                          <h5 class="card-title">Inclusão no CADIN</h5>
+                          <p class="card-text">Impedimento de participar de licitações e projetos públicos.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        A Anatel realmente fiscaliza?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sim. A Anatel possui equipes de fiscalização regionais que utilizam equipamentos de rastreamento e inteligência para identificar operações irregulares. Muitas fiscalizações também são iniciadas por denúncias de interferências de sistemas clandestinos ou com licença vencida. <a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-desmonta-sistema-de-transmissao-clandestino-em-fazendas-no-piaui" target="_blank" rel="noopener noreferrer">Veja aqui</a>.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Uma única estação irregular pode gerar multa?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                       Sim. Cada estação ou ponto de uso sem a devida licença pode ser autuado de forma individual, o que aumenta o valor total das penalidades.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                       Quais os riscos de operar sem licença?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Os riscos incluem multas, apreensão de equipamentos, interrupção dos serviços e até ação penal pelo ministério público federal, com a responsabilização de gestores e funcionários envolvidos.
+                    </div>
+                </div>
+            </div>
+             <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        É possível regularizar um sistema que já está operando?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                       Sim. Embora não seja permitida a operação de equipamentos que emitem radiofrequência sem o licenciamento da Anatel, a Entel Telecom atua para adequar a empresa à legislação da forma correta e no menor tempo possível.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Já tenho equipamentos homologados. Isso não basta?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Não basta. Ter o equipamento homologado é apenas um dos requisitos. Você também precisa do licenciamento da frequência junto à Anatel para poder operar legalmente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-5 text-white" style="background-color: #008e67;">
+    <div class="container text-center">
+      <h2 class="mb-3">Mantenha sua Operação Legalizada</h2>
+      <p class="lead mb-4">Não espere pela fiscalização. Fale com um de nossos especialistas e garanta a segurança do seu negócio.</p>
+      <button class="btn btn-light text-success" onclick="openWhatsAppAnatel()">
+        <i class="fab fa-whatsapp"></i> Fale Conosco Agora
+      </button>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Entel Telecom. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function openWhatsAppAnatel() {
+      const numero = "5531999517056";
+      const mensagem = "Olá, gostaria de saber mais sobre o licenciamento Anatel.";
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, "_blank");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
