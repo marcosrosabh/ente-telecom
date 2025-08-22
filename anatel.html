@@ -24,7 +24,7 @@
           <ul class="navbar-nav">
             <li class="nav-item"><a href="index.html#home" class="nav-link">Início</a></li>
             <li class="nav-item"><a href="index.html#sobre" class="nav-link">Sobre Nós</a></li>
-            <li class="nav-item"><a href="anatel.html" class="nav-link">Anatel</a></li>
+            <li class="nav-item"><a href="anatel.html" class="nav-link active">Anatel</a></li>
             <li class="nav-item"><a href="index.html#servicos" class="nav-link">Serviços</a></li>
             <li class="nav-item"><a href="index.html#areas" class="nav-link">Áreas</a></li>
             <li class="nav-item"><a href="index.html#contato" class="nav-link">Contato</a></li>
@@ -36,13 +36,10 @@
 
   <section id="home-anatel" class="py-5 bg-light text-center">
     <div class="container">
-        <h1 class="display-4 fw-bold">Operação Legal e Segura</h1>
+        <h1 class="display-5 fw-bold">Licenciamento e Conformidade Anatel</h1>
         <p class="lead">Garanta a conformidade total com a Anatel e evite penalidades severas.</p>
         <img src="assets/licenciamento_anatel.png" alt="Licenciamento Anatel" class="img-fluid rounded-circle shadow my-4" style="max-width: 180px;"/>
         <p>A Entel Telecom oferece consultoria completa para manter suas operações de telecomunicações regularizadas.</p>
-        <button class="btn btn-lg btn-success" onclick="openWhatsAppAnatel()">
-            <i class="fab fa-whatsapp"></i> Quero Regularizar Agora
-        </button>
     </div>
   </section>
 
@@ -88,6 +85,69 @@
               </div>
           </div>
       </div>
+  </section>
+
+  <section id="novas-informacoes" class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <p class="lead mb-5">Estar em dia com o Licenciamento Anatel é mais do que uma exigência legal — é uma <strong>estratégia de proteção</strong> para o seu negócio. Abaixo seguem algumas situações consideradas infrações.</p>
+        </div>
+      </div>
+      <h2 class="section-title">Principais Infrações e Riscos</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-map-marked-alt fa-3x mb-3 text-warning"></i>
+              <h5 class="card-title">Inconformidades na Licença</h5>
+              <p class="card-text">Uso de equipamentos com características diversas da licença, como diferença na coordenada geográfica, altura da antena ou potência superior à permitida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-broadcast-tower fa-3x mb-3 text-danger"></i>
+              <h5 class="card-title">Uso Clandestino de Frequências</h5>
+              <p class="card-text">Atividade sem autorização da Anatel constitui <strong>infração penal</strong>, sujeita a detenção de dois a quatro anos e multa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-biohazard fa-3x mb-3 text-danger"></i>
+              <h5 class="card-title">Operar sem Laudo Radiométrico</h5>
+              <p class="card-text">Constitui <strong>infração GRAVE com risco à vida</strong>, sujeito à interrupção imediata dos equipamentos, além de multa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 class="mb-4">Como a Entel Telecom pode te ajudar</h2>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-start mb-3">
+              <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+              <p class="mb-0"><strong>Assessoria completa</strong> em licenciamento Anatel de estações e frequências.</p>
+            </li>
+            <li class="d-flex align-items-start mb-3">
+              <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+              <p class="mb-0"><strong>Emissão de Laudo Radiométrico</strong> em conformidade com a Resolução 700 da Anatel.</p>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+              <p class="mb-0"><strong>Suporte contínuo</strong> com foco em conformidade com as resoluções da Anatel.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+           <img src="assets/engenheiro_analizando_projeto.jpg" alt="Análise de conformidade Anatel" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="faq" class="py-5 bg-light">
@@ -162,8 +222,8 @@
     <div class="container text-center">
       <h2 class="mb-3">Mantenha sua Operação Legalizada</h2>
       <p class="lead mb-4">Não espere pela fiscalização. Fale com um de nossos especialistas e garanta a segurança do seu negócio.</p>
-      <button class="btn btn-light text-success" onclick="openWhatsAppAnatel()">
-        <i class="fab fa-whatsapp"></i> Fale Conosco Agora
+      <button class="btn btn-lg btn-light text-success" onclick="openWhatsAppAnatel()">
+        <i class="fab fa-whatsapp"></i> Quero Regularizar Agora
       </button>
     </div>
   </section>
@@ -176,9 +236,9 @@
 
   <script>
     function openWhatsAppAnatel() {
-      const numero = "5531999517056";
+      const numero = "5531983769481";
       const mensagem = "Olá, gostaria de saber mais sobre o licenciamento Anatel.";
-      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, "_blank");
+      window.open(`httpss://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, "_blank");
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
