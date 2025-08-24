@@ -201,6 +201,6 @@ section {
 #home .display-5,
 #home-anatel .display-5,
 #contato h2 {
-    font-size: 2.2rem; /* <-- Este valor define o tamanho padrão para todos os títulos */
-    margin-bottom: 1.5rem; /* Garante uma margem inferior consistente */
+    font-size: 1.5rem; /* <-- Este valor define o tamanho padrão para todos os títulos */
+    margin-bottom: 1.0rem; /* Garante uma margem inferior consistente */
 }
